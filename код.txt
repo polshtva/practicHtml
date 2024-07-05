@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация на конференцию</title>
+</head>
+<body>
+    <h1>Конференция "Современные веб-технологии"</h1>
+    <img src="pic.png" alt="Логотип конференции" width="200">
+    <p>Добро пожаловать на регистрацию участников конференции "Современные веб-технологии". Пожалуйста, заполните формы ниже, чтобы зарегистрироваться.</p>
+    
+    <h2>Основная информация</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Основная информация</legend>
+            <label for="firstname">Имя:</label>
+            <input type="text" id="firstname" name="firstname" required><br><br>
+            
+            <label for="lastname">Фамилия:</label>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+            
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            
+            <input type="submit" value="Отправить">
+        </fieldset>
+    </form>
+    
+    <h2>Информация об участии</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Информация об участии</legend>
+            <label for="participation">Тип участия:</label>
+            <select id="participation" name="participation">
+                <option value="offline">Очное</option>
+                <option value="online">Онлайн</option>
+            </select><br>
+            
+            <label>Выберите интересующие сессии:</label><br>
+            <input type="checkbox" id="session1" name="sessions" value="session1">
+            <label for="session1">Сессия 1: Введение в HTML</label><br>
+            
+            <input type="checkbox" id="session2" name="sessions" value="session2">
+            <label for="session2">Сессия 2: Основы CSS</label><br>
+            
+            <input type="checkbox" id="session3" name="sessions" value="session3">
+            <label for="session3">Сессия 3: Основы JavaScript</label><br>
+            
+            <label for="comments">Комментарии:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+            
+            <input type="submit" value="Отправить">
+        </fieldset>
+    </form>
+    
+    <h2>Расписание конференции</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Время</th>
+            <th colspan="2">Сессия</th>
+        </tr>
+        <tr>
+            <th>Тема</th>
+            <th>Докладчик</th>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Введение в HTML</td>
+            <td>Иван Иванов</td>
+        </tr>
+        <tr>
+            <td>11:15 - 12:15</td>
+            <td>Основы CSS</td>
+            <td>Петр Петров</td>
+        </tr>
+        <tr>
+            <td>12:30 - 13:30</td>
+            <td colspan="2">Основы JavaScript</td>
+        </tr>
+    </table>
+</body>
+</html>
